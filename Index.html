@@ -8,8 +8,9 @@
       href="C:\NuevoProyecto\TiendaVideojuegos\css\estilo.css"
       style="text/css"
     />
-    <link rel="stylesheet" href="/styles/icon/style.css" style="text/css" />
-    <link rel="stylesheet" type="text/css" href="/styles/style.css"
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="C:\Proyecto\Tienda\css\bootstrap.css">
+
     <script src="script.js"></script>
     <script src="NumLetra.js"></script>
     <title>BanCIC-Página de Videojuegos</title>
@@ -54,5 +55,42 @@
             
       </div>
     </div>
+    <div id="fh5co-started">
+      <div class="container">
+          <div class="row animate-box">
+              <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                  <h2>NEWSLETTER</h2>
+                  <p style="color: #fff">Si desea mantenerse al día de nuestros últimos lanzamientos y descuentos, favor de suscribirse.</p>
+              </div>
+          </div>
+          <div class="row animate-box">
+              <div class="col-md-8 col-md-offset-2">
+                  <input type="hidden" runat="server" id="VerificarNewsletter" value="0" />
+                  <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                          <label for="email" class="sr-only">Nombre</label>
+                          <input type="text" class="form-control" id="NombreEmail" runat="server" placeholder="Nombre">
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                          <label for="email" class="sr-only">Apellido</label>
+                          <input type="text" class="form-control" id="ApellidowEmail" runat="server" placeholder="Apellido">
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                          <label for="email" class="sr-only">Email</label>
+                          <input type="email" class="form-control" id="NewsletterText" runat="server" placeholder="Correo">
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                              <input type="button" class="btn btn-default btn-block" ID="NewsletterBoton" value="Suscribirme"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
   </body>
 </html>

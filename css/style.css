@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family: "renner";
+    src: url("../fonts/Renner/Renner.ttf");
+}
+/* =======================================================
+*
+* 	Template Style 
+*
+* ======================================================= */
+body {
+    font-family: renner, serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #828282;
+    background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, figure {
+    color: #49509C;
+    font-family: renner, Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+
+.fh5co-nav {
+    padding: 18px 0;
+    background: #49509C;
+}
+
+.fh5co-nav #fh5co-logo {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: renner, Arial, sans-serif;
+}
+
+.fh5co-nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  font-family: renner, Arial, sans-serif;
+}
+.fh5co-nav ul li a {
+  font-size: 13px;
+  padding: 30px 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
+  color: black;
+}
+
+#fh5co-about,
+#fh5co-footer {
+  padding: 4em 0;
+  clear: both;
+}
+
+#fh5co-started {
+    background: #49509C;
+}
+#fh5co-started .fh5co-heading h2 {
+  color: #fff;
+  margin-bottom: 20px !important;
+}
+
+#fh5co-started .form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: none !important;
+  color: #fff;
+  font-size: 16px !important;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#fh5co-started .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#fh5co-started .btn {
+  height: 54px;
+  border: none !important;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
+  background: #444;
+}

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css\icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css\bootstrap.css" />
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css\style.css" />
+  </head>
+
+  <body>
+    <div id="page">
+      <nav class="fh5co-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6">
+              <div id="fh5co-logo">
+                <a href="index.html"
+                  ><img src="images\logo.jpg" style="width: 35%"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-6 text-center menu-1">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="product.html">Tienda</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm">
+        <img src="images\control.gif" style="width: 35%" />
+      </header>
+      <div id="fh5co-about">
+        <div class="container">
+          
+            <div class="row animate-box">
+              <div class="col-md-6">
+                <div class="desc">
+                  <h3>Nuestra Empresa</h3>
+                  <p style="color: #000">SOMOS…</p>
+                  <p style="color: #000">
+                    Una empresa mexicana socialmente responsable y comprometida
+                    con la venta de video juegos.
+                  </p>
+                </div>
+                <div class="desc">
+                  <h3>Misión &amp; Visión</h3>
+                  <p style="color: #000">
+                    <strong>Nuestra misión</strong> es estar a la vanguardia en todos los productos que ofrecemos.
+                    <br />
+                    Nuestros servicios buscan ser novedosos.
+                  </p>
+                  <p style="color: #000">
+                    <strong>Nuestra visión</strong> será, siempre consolidarnos
+                    como la empresa mexicana líder, en ofrecer beneficios de
+                    calidad y mejora continua que satisfagan las necesidades nuestros usuarios.<br />
+                    Nuestra promesa es garantizar la satisfacción total a través
+                    de nuestros productos, para ti que confías en nosotros.
+                    <br />
+                    ¡Gracias por elegir BanCIC para acompañarte a disfrutar de tu pasatiempo favorito!
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  class="img-responsive"
+                  src="images\mision.png"
+                  alt="about"
+                />
+              </div>
+            </div>
+          
+        
+      </div>
+
+      <div id="fh5co-started">
+        <div class="container">
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+              <h2>Newsletter</h2>
+              <p style="color: #fff">
+                Si desea mantenerse al día de nuestros últimos lanzamientos y
+                descuentos, favor de suscribirse.
+              </p>
+            </div>
+          </div>
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2">
+              <input
+                type="hidden"
+                runat="server"
+                id="VerificarNewsletter"
+                value="0"
+              />
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label for="email" class="sr-only">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="NombreEmail"
+                    runat="server"
+                    placeholder="Nombre"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label for="email" class="sr-only">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ApellidowEmail"
+                    runat="server"
+                    placeholder="Apellido"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label for="email" class="sr-only">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="NewsletterText"
+                    runat="server"
+                    placeholder="Correo"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="button"
+                  class="btn btn-default btn-block"
+                  id="NewsletterBoton"
+                  value="Suscribirme"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
