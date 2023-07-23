@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css\icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css\bootstrap.css" />
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css\style.css" />
+    <title>Contacto... BanCIC</title>
+  </head>
+  <body>
+    <div id="page">
+      <nav class="fh5co-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6">
+              <div id="fh5co-logo">
+                <a href="index.html"
+                  ><img src="images\logo.jpg" style="width: 35%"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-6 text-center menu-1">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="product.html">Tienda</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="fh5co-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="fh5co-contact-info">
+              <br />
+              <h3>Información de contacto</h3>
+              <ul>
+                <li class="address">
+                  <a style="color: #000"
+                    >Av. Industria Militar #1055, Col. Lomas de Sotelo
+                  </a>
+                </li>
+                <li class="phone">
+                  <a style="color: #000" href="tel://8006818282"
+                    >(55) 56260500</a
+                  >
+                </li>
+                <li class="email">
+                  <a
+                    style="color: #000"
+                    href="mailto:atencionaclientes@bancic.mx"
+                    >atencionaclientes@bancic.mx</a
+                  >
+                </li>
+                <li class="url">
+                  <a style="color: #000" href="http://bancic.mx">bancic.mx</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 animate-box">
+            <br />
+            <h3>Información para contacto</h3>
+
+            <form
+              action="mailto:atencionaclientes@bancic.mx"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="row form-group">
+                <div class="col-md-6" style="margin-top: 5%">
+                  <!-- <label for="fname">First Name</label> -->
+                  <input
+                    type="text"
+                    runat="server"
+                    id="txtNombre"
+                    class="form-control"
+                    placeholder="Nombre"
+                    title="Rellena este campo."
+                    required="required"
+                  />
+                </div>
+                <div class="col-md-6" style="margin-top: 5%">
+                  <!-- <label for="lname">Last Name</label> -->
+                  <input
+                    type="text"
+                    runat="server"
+                    id="txtApellidos"
+                    class="form-control"
+                    placeholder="Apellidos"
+                    title="Rellena este campo."
+                    required="required"
+                  />
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <!-- <label for="email">Email</label> -->
+                  <input
+                    type="email"
+                    title="Rellena este campo."
+                    pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                    required="required"
+                    runat="server"
+                    id="txtCorreo"
+                    class="form-control"
+                    placeholder="Correo"
+                  />
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <!-- <label for="subject">Subject</label> -->
+                  <input
+                    runat="server"
+                    id="txtTelefono"
+                    maxlength="10"
+                    class="form-control"
+                    type="tel"
+                    onkeypress="validate(event)"
+                    title="Rellena este campo."
+                    pattern="[0-9]{10}"
+                    required="required"
+                    name="Nombre"
+                    placeholder="Teléfono"
+                  />
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <!-- <label for="message">Message</label> -->
+                  <textarea
+                    name="message"
+                    runat="server"
+                    id="txtMensaje"
+                    cols="30"
+                    rows="10"
+                    class="form-control"
+                    placeholder="Una breve descripción de su solicitud"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  class="btn btn-default btn-block"
+                  id="Mensaje"
+                  value="Enviar Mensaje"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

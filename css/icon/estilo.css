@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {/* Cuando pones el nombre directo, depende del objeto, en el caso de BODY, solo hay uno, no requiero definir un ID */
+	background-color:#2B7f73; /*Fondo de color verde a toda la pagina*/
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; /* define la fuente o el conjunto de fuentes */
+	color:#FFFFFF; /*definiendo el color de la fuente */
+
+	}
+
+h1 {
+	padding-left:20px;
+	margin-left:30px;
+	margin-top:30px;
+
+	}
+
+input, button {
+	background:none; /* sin fondo */
+	border:none; /* sin borde */
+	text-align:center; /* texto centrado */
+	color:#FFFFFF; /* color de fuente */
+	font-family:Georgia, "Times New Roman", Times, serif; /* tipo de fuente */
+	font-size:16px; /* Tamaño de fuente */
+
+	}
+
+button {
+	background-color:#2B7F73; /* color de relleno */
+/*	opacity:0.33;*/
+	text-align:center;
+	color:#FFF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-radius:5px;
+	padding:5px;
+	margin:10px;
+	cursor:pointer; /* cambiar la forma en que se muestra el puntero (Manita)*/
+
+	}
+
+#dvlogo {
+		width:40%;
+		background-color:#9C3;
+		display:inline-table;
+
+	}
+
+#dvlist {
+		font-size:18px;
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		height:20px;
+		padding-bottom:7px;
+		width:50%;
+		display:inline-table;
+		background-color:#93C;
+
+	}
+
+#dvlist ul {
+		list-style:none;
+		padding-bottom:10px;
+
+	}
+
+#dvlist ul li {
+		float:left; /* A la manera en que se va a comportar con relacion a los demas elmementos */
+		padding-left:20px;
+		text-align:right;
+		cursor:pointer;
+
+	}
+
+#dvcabb {
+	position:fixed;
+	height:90px;
+	top:0;
+	left:0;
+	right:0;
+	background-color:#2B7F73;
+
+	}
+
+#dvcabz {/* cuando el nombre de la clase inicia con #, significa que la aplicacion de esta clase depende del ID del objeto (id="nombre", mas alla de la definicion de clase (class="nombre") */
+	position:fixed; /* a la relacion entre el contenedor y la pagina */
+	height:75px; /* alto del objeto (DIV) */
+	top:5px; /* la distancia entre la ventana del navegador hacia el centro para determinar el inicio del objeto (DIV) -Arriba hacia abajo */
+	left:10px; /* izq a derecha */
+	right:10px; /* derecha a izquierda */
+	/* bottom:5px; desde abajo hacia arriba */
+	box-shadow:#00554C 0px 20px 30px -10px; /* sombra que tiene el objeto (DIV) hacia los 4 lados */
+	border-radius:15px; /* esquinas redondeadas */
+	margin:8px; /* margen va de la orilla hacia afuera */
+	vertical-align:middle; /* el contenido esta configurado para que verticalmente se muestre centrado */
+	background-color:#2B7F73; /* el color de fondo para que el contenedor NO tenga un fondo transparente */
+
+	}
+
+#imlogo {
+	height:35px; /* el alto del objeto */
+	padding-top:5px; /* el espacio entre el objeto y lo de alrededor, solo que Padding se considera de la orilla hacia el centro del objeto, padding va a los 4 lados */
+/*	si no defines direccion, entonces, aplica para los 4 lados por igual, si solo quieres que aplique, entonces hay que definirlo
+
+	padding-top:20px;
+	padding-left:40px;
+	padding-bottom:40px;
+	padding-right:30px;
+
+	margin:50px;
+	margin-left:20px;
+	margin-right:40px;
+
+	border-left:#09C;
+	border-left-style:solid;
+	border-style:groove;*/
+
+	}
+
+#prcont {
+	width:80%;
+	text-align:justify;
+	margin-left:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+
+	}
+
+#dvhead {
+	padding-top:120px;
+
+	}
+
+.pdsidla {
+	padding-left:7px;
+
+	}
+
+.pdsidra {
+	padding-right:7px;
+
+	}
+
+.txhrzcn {
+	text-align:center;
+
+	}
+
+.txhrzlf {
+	text-align:left;
+
+	}
+
+.imfondoa {
+	background-image:url(/images/img0.jpg);
+
+	}
+
+.imfondob {
+	background-image:url(/images/img1.jpg);
+
+	}
+
+.dvcrdsh {
+	display:inline-table; /* esta propiedad modifica el comportamiento de los div para que puedan compartir fila */
+	width:300px; /* ancho */
+	margin:20px; /* margen */
+
+	}
+
+.dvcatim {
+	width:280px; /* ancho */
+	height:150px; /* alto */
+	box-shadow:#00554C 5px 5px 5px 5px; /* sombra */
+	margin:10px; /margen */
+/*	background-image:url(/images/img0.jpg); imagen de relleno del contenedor*/
+	background-size:cover; /* forma en que la imagen debe mostrarse con relacion al contenedor (tamaño) */
+	background-position:center; /* posicion de la imagen de fondo con relacion al contenedor */
+	background-repeat:no-repeat; /* si quiero que la imagen se repita dentro del contenedor (mosaico o que sea una sola) */
+	border-radius:8px; /* esquinas redondeadas */
+
+	}
+
+	@charset "utf-8";
+	* {
+		margin:0px;
+		padding: 0px;
+	}
+	
+	#dvmenu{
+		margin: auto;
+		width: 500px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	ul,ol{
+		list-style: none;
+	}
+	
+	.lsnav > li {
+		float:left;
+	}
+	
+	.lsnav li a{
+		background-color: #00554C;
+		color:#fff;
+		text-decoration: none;
+		padding: 10px 12px;
+		display: block;
+	}
+	
+	.lsnav li a:hover{
+		background-color: #434343;
+	}
+	
+	.lsnav li ul{
+		display: none;
+		position: absolute;
+		min-width: 140px;
+	
+	}
+	
+	.lsnav li:hover >ul{
+		display: block;
+	}
+	
+	.lsnav li ul li{
+		position: relative;
+	}
+	
+	.lsnav li ul li ul{
+		right: 140px;
+		top:0px;
+	}
+
+
+

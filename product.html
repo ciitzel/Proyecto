@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css\icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css\bootstrap.css" />
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\icon\estilo.css" style="text/css" />
+    <link rel="stylesheet" href="css\icon\style.css" style="text/css" />
+    <script src="js\script.js"></script>
+    <script src="js\NumLetra.js"></script>
+    <title>Productos... BanCIC</title>
+  </head>
+  <body onLoad="Bienvenida(); dfCatg('12', 'dvcatg')">
+    <div id="dvcabb"></div>
+    <!--dvcabz: es el nombre del objeto (DIV). Anteponer un prefijo o en su caso un sufijo en el nombre del objeto, imagen (im), div (dv) -->
+    <div id="dvcabz">
+      <!--Este DIV contiene el encabezado de la pagina, podria llevar un menu, y el logo. NO lleva Clase porque el estilo esta definido desde el ID del elemento (DIV)-->
+      <div id="page">
+        <nav class="fh5co-nav">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-xs-6">
+                <div id="fh5co-logo">
+                  <a href="index.html"
+                    ><img src="images\logo.jpg" style="width: 35%"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-6 text-center menu-1">
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="product.html">Tienda</a></li>
+                  <li><a href="about.html">Acerca de</a></li>
+                  <li><a href="contact.html">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div id="dvbody">
+      <div id="dvhead">
+        <div class="row animate-box">
+          <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+            <br />
+            <span style="color: #000">Lo mejor</span>
+            <h2>Nuestros Productos</h2>
+            <p style="color: #000">
+              La plataforma de beneficios que tiene todos los que necesitas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="dvprod">
+        <h1>Catálogo</h1>
+        <div id="dvcatg" class="txhrzcn"></div>
+      </div>
+      Mesa Giratoria
+
+      <form>
+        <input type="hidden" id="lstprod" />
+        <input type="hidden" id="cntprod" />
+        <input type="hidden" id="prcprod" />
+        <input type="hidden" id="nmeprod" />
+      </form>
+      <div id="dvcont"></div>
+      <button onClick="LlenaPag()">Muestra</button>
+      <div id="dvproceso" style="visibility: hidden"></div>
+      <button style="visibility: hidden" id="btmostrar">boton</button
+      ><span onClick="ItemShow('btmostrar', '1')">Juega</span>
+      <!--
+            	visibility:hidden NO TE PERMITE VOLVER A MOSTRARLO DE NINGUNA MANERA
+                display:none PUEDES JUGAR CON EL MOSTRARLO O NO DESDE EL MISMO CODIGO
+            -->
+    </div>
+  </body>
+</html>
